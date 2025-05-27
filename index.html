@@ -15,9 +15,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'lime': '#32CD32',
-                        'primary': '#000000',
-                        'secondary': '#333333',
+                        'lime': 'var(--color-lime)',
+                        'primary': 'var(--color-primary)',
+                        'secondary': 'var(--color-secondary)',
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif'],
@@ -39,11 +39,11 @@
             </div>
             
             <div class="hidden md:flex items-center space-x-6">
-                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
-                <a href="#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="contact.html" class="text-white hover:text-lime transition-colors">Contact</a>
-                <a href="#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#online-services" class="payfast-button inline-block">
                     Online Services
                 </a>
             </div>
@@ -55,11 +55,11 @@
 
         <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
-                <a href="#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="contact.html" class="text-white hover:text-lime transition-colors">Contact</a>
-                <a href="#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#online-services" class="payfast-button text-center">
                     Online Services
                 </a>
             </div>
@@ -70,13 +70,13 @@
     <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
         <div class="container mx-auto px-4 py-16">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-secondary">
                     Simplifying Compliance, Empowering Growth
                 </h1>
                 <p class="text-xl text-gray-600 mb-8">
                     Cloud-based financial and business administration services for South African SMEs.
                 </p>
-                <a href="#contact" class="bg-lime text-white px-8 py-3 rounded-full text-lg hover:bg-opacity-90 transition-all inline-block">
+                <a href="#contact" class="payfast-button inline-block">
                     Get in Touch
                 </a>
             </div>
@@ -89,7 +89,7 @@
     <section id="online-services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Access Our Services Online</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-secondary">Access Our Services Online</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
                     Convenient, secure, and fast — choose and pay for your services online through our secure PayFast payment gateway.
                 </p>
@@ -97,13 +97,13 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Monthly Bookkeeping Service -->
-                <div class="service-card bg-white rounded-lg shadow-md p-6">
+                <div class="service-card rounded-lg shadow-md p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-book-open text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Monthly Bookkeeping</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Monthly Bookkeeping</h3>
                     <p class="text-gray-600 mb-4">Complete monthly bookkeeping service for small to medium businesses.</p>
-                    <div class="text-2xl font-bold mb-4">R1,500/month</div>
+                    <div class="text-2xl font-bold mb-4 text-secondary">R1,500/month</div>
                     <button onclick="initializePayFastCheckout('bookkeeping', 1500, 'Monthly Bookkeeping Service')" 
                             class="payfast-button w-full">
                         Pay Now
@@ -111,13 +111,13 @@
                 </div>
 
                 <!-- Tax Return Filing -->
-                <div class="service-card bg-white rounded-lg shadow-md p-6">
+                <div class="service-card rounded-lg shadow-md p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-file-invoice text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Tax Return Filing</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Tax Return Filing</h3>
                     <p class="text-gray-600 mb-4">Professional tax return preparation and filing service.</p>
-                    <div class="text-2xl font-bold mb-4">R850</div>
+                    <div class="text-2xl font-bold mb-4 text-secondary">R850</div>
                     <button onclick="initializePayFastCheckout('tax-return', 850, 'Tax Return Filing')" 
                             class="payfast-button w-full">
                         Pay Now
@@ -125,13 +125,13 @@
                 </div>
 
                 <!-- Financial Statements -->
-                <div class="service-card bg-white rounded-lg shadow-md p-6">
+                <div class="service-card rounded-lg shadow-md p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-chart-line text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Financial Statements</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Financial Statements</h3>
                     <p class="text-gray-600 mb-4">Comprehensive financial statement preparation and analysis.</p>
-                    <div class="text-2xl font-bold mb-4">R2,500</div>
+                    <div class="text-2xl font-bold mb-4 text-secondary">R2,500</div>
                     <button onclick="initializePayFastCheckout('financial-statements', 2500, 'Financial Statements')" 
                             class="payfast-button w-full">
                         Pay Now

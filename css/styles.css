@@ -1,3 +1,15 @@
+/* Color Variables */
+:root {
+    --color-primary: #000000;
+    --color-secondary: #333333;
+    --color-background: #1a1a1a;
+    --color-lime: #32CD32;
+    --color-lime-hover: #28a428;
+    --color-white: #ffffff;
+    --color-gray: #e5e5e5;
+    --transition-default: all 0.3s ease;
+}
+
 /* Custom animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -14,16 +26,17 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: var(--color-background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #32CD32;
+    background: var(--color-lime);
     border-radius: 4px;
+    transition: var(--transition-default);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #28a428;
+    background: var(--color-lime-hover);
 }
 
 /* Smooth scroll behavior */
@@ -33,13 +46,13 @@ html {
 
 /* Dark theme and general styles */
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: var(--color-background);
+    color: var(--color-white);
 }
 
 /* Header styles */
 .site-header {
-    background-color: #000000;
+    background-color: var(--color-primary);
 }
 
 .logo-container {
@@ -57,41 +70,52 @@ body {
     object-fit: contain;
 }
 
+/* Navigation links */
+.nav-link {
+    color: var(--color-white);
+    transition: var(--transition-default);
+}
+
+.nav-link:hover {
+    color: var(--color-lime);
+}
+
 /* Section backgrounds */
 .section-dark {
-    background-color: #1a1a1a;
+    background-color: var(--color-background);
 }
 
 .section-black {
-    background-color: #000000;
+    background-color: var(--color-primary);
 }
 
 /* Card styles */
 .bg-card {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    transition: var(--transition-default);
 }
 
 /* Custom styles for PayFast buttons */
 .payfast-button {
-    background-color: #32CD32;
-    color: white;
+    background-color: var(--color-lime);
+    color: var(--color-white);
     padding: 12px 24px;
     border-radius: 9999px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: var(--transition-default);
 }
 
 .payfast-button:hover {
-    background-color: #28a428;
+    background-color: var(--color-lime-hover);
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Service card hover effects */
 .service-card {
-    transition: all 0.3s ease;
-    background-color: #ffffff;
+    transition: var(--transition-default);
+    background-color: var(--color-white);
 }
 
 .service-card:hover {
@@ -101,40 +125,47 @@ body {
 
 /* Team card styles */
 .team-card {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    transition: var(--transition-default);
+}
+
+.team-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Form styles */
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
-    background-color: #ffffff;
-    border: 1px solid #e5e5e5;
-    color: #333333;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    color: var(--color-secondary);
     padding: 0.75rem;
     border-radius: 0.5rem;
     width: 100%;
     margin-bottom: 1rem;
+    transition: var(--transition-default);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
     outline: none;
-    border-color: #32CD32;
+    border-color: var(--color-lime);
     box-shadow: 0 0 0 2px rgba(50, 205, 50, 0.2);
 }
 
 .contact-form label {
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 0.5rem;
     display: block;
 }
 
 /* Hero section styles */
 .hero-section {
-    background-color: #000000;
+    background-color: var(--color-primary);
     position: relative;
     overflow: hidden;
 }
@@ -153,10 +184,10 @@ body {
 /* Custom geometric background pattern */
 .geometric-bg {
     background-image: 
-        linear-gradient(30deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
-        linear-gradient(150deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
-        linear-gradient(30deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
-        linear-gradient(150deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
+        linear-gradient(30deg, var(--color-background) 12%, transparent 12.5%, transparent 87%, var(--color-background) 87.5%, var(--color-background)),
+        linear-gradient(150deg, var(--color-background) 12%, transparent 12.5%, transparent 87%, var(--color-background) 87.5%, var(--color-background)),
+        linear-gradient(30deg, var(--color-background) 12%, transparent 12.5%, transparent 87%, var(--color-background) 87.5%, var(--color-background)),
+        linear-gradient(150deg, var(--color-background) 12%, transparent 12.5%, transparent 87%, var(--color-background) 87.5%, var(--color-background)),
         linear-gradient(60deg, #1a1a1a77 25%, transparent 25.5%, transparent 75%, #1a1a1a77 75%, #1a1a1a77),
         linear-gradient(60deg, #1a1a1a77 25%, transparent 25.5%, transparent 75%, #1a1a1a77 75%, #1a1a1a77);
     background-size: 80px 140px;

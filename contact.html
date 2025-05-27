@@ -14,9 +14,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'lime': '#32CD32',
-                        'primary': '#000000',
-                        'secondary': '#333333',
+                        'lime': 'var(--color-lime)',
+                        'primary': 'var(--color-primary)',
+                        'secondary': 'var(--color-secondary)',
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif'],
@@ -38,11 +38,11 @@
             </div>
             
             <div class="hidden md:flex items-center space-x-6">
-                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="contact.html" class="text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link text-lime">Contact</a>
+                <a href="index.html#online-services" class="payfast-button inline-block">
                     Online Services
                 </a>
             </div>
@@ -54,11 +54,11 @@
 
         <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="contact.html" class="text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link text-lime">Contact</a>
+                <a href="index.html#online-services" class="payfast-button text-center">
                     Online Services
                 </a>
             </div>
@@ -113,7 +113,7 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
                         </div>
-                        <button type="submit" class="bg-lime text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all w-full">
+                        <button type="submit" class="payfast-button w-full">
                             Send Message
                         </button>
                     </form>
@@ -122,34 +122,34 @@
                 <!-- Contact Details -->
                 <div class="space-y-8">
                     <div class="bg-card rounded-lg p-8 shadow-lg">
-                        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                        <h2 class="text-2xl font-bold mb-6 text-secondary">Contact Information</h2>
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt text-lime mt-1 mr-4 text-xl"></i>
                                 <div>
-                                    <h3 class="font-semibold mb-1">Address</h3>
-                                    <p>364 Surrey Avenue<br>Ferndale<br>Randburg<br>2194</p>
+                                    <h3 class="font-semibold mb-1 text-secondary">Address</h3>
+                                    <p class="text-secondary">364 Surrey Avenue<br>Ferndale<br>Randburg<br>2194</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-phone text-lime mt-1 mr-4 text-xl"></i>
                                 <div>
-                                    <h3 class="font-semibold mb-1">Phone</h3>
-                                    <p><a href="tel:+27110234567">+27 11 023 4567</a></p>
+                                    <h3 class="font-semibold mb-1 text-secondary">Phone</h3>
+                                    <p><a href="tel:+27110234567" class="text-secondary hover:text-lime transition-colors">+27 11 023 4567</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-envelope text-lime mt-1 mr-4 text-xl"></i>
                                 <div>
-                                    <h3 class="font-semibold mb-1">Email</h3>
-                                    <p><a href="mailto:info@hindsightonline.co.za">info@hindsightonline.co.za</a></p>
+                                    <h3 class="font-semibold mb-1 text-secondary">Email</h3>
+                                    <p><a href="mailto:info@hindsightonline.co.za" class="text-secondary hover:text-lime transition-colors">info@hindsightonline.co.za</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-clock text-lime mt-1 mr-4 text-xl"></i>
                                 <div>
-                                    <h3 class="font-semibold mb-1">Business Hours</h3>
-                                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                                    <h3 class="font-semibold mb-1 text-secondary">Business Hours</h3>
+                                    <p class="text-secondary">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -157,15 +157,15 @@
 
                     <!-- Social Media Links -->
                     <div class="bg-card rounded-lg p-8 shadow-lg">
-                        <h2 class="text-2xl font-bold mb-6">Connect With Us</h2>
+                        <h2 class="text-2xl font-bold mb-6 text-secondary">Connect With Us</h2>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                            <a href="#" class="text-lime hover:text-lime-hover transition-colors">
                                 <i class="fab fa-linkedin text-3xl"></i>
                             </a>
-                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                            <a href="#" class="text-lime hover:text-lime-hover transition-colors">
                                 <i class="fab fa-facebook text-3xl"></i>
                             </a>
-                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                            <a href="#" class="text-lime hover:text-lime-hover transition-colors">
                                 <i class="fab fa-instagram text-3xl"></i>
                             </a>
                         </div>
