@@ -1,0 +1,164 @@
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #32CD32;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #28a428;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark theme and general styles */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Header styles */
+.site-header {
+    background-color: #000000;
+}
+
+.logo-container {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Section backgrounds */
+.section-dark {
+    background-color: #1a1a1a;
+}
+
+.section-black {
+    background-color: #000000;
+}
+
+/* Card styles */
+.bg-card {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Custom styles for PayFast buttons */
+.payfast-button {
+    background-color: #32CD32;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.payfast-button:hover {
+    background-color: #28a428;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Service card hover effects */
+.service-card {
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Team card styles */
+.team-card {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Form styles */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline: none;
+    border-color: #32CD32;
+    box-shadow: 0 0 0 2px rgba(50, 205, 50, 0.2);
+}
+
+.contact-form label {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Hero section styles */
+.hero-section {
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(50, 205, 50, 0.1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+/* Custom geometric background pattern */
+.geometric-bg {
+    background-image: 
+        linear-gradient(30deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
+        linear-gradient(150deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
+        linear-gradient(30deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
+        linear-gradient(150deg, #1a1a1a 12%, transparent 12.5%, transparent 87%, #1a1a1a 87.5%, #1a1a1a),
+        linear-gradient(60deg, #1a1a1a77 25%, transparent 25.5%, transparent 75%, #1a1a1a77 75%, #1a1a1a77),
+        linear-gradient(60deg, #1a1a1a77 25%, transparent 25.5%, transparent 75%, #1a1a1a77 75%, #1a1a1a77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+} 

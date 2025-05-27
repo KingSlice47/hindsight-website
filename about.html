@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hindsight Online (Pty) Ltd</title>
+    <meta name="description" content="Learn about Hindsight Online's history, our team, and our commitment to excellence in accounting and business administration services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime': '#32CD32',
+                        'primary': '#000000',
+                        'secondary': '#333333',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Sticky Header (same as index.html) -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold">Hindsight Online</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="text-lime transition-colors">About</a>
+                <a href="services.html" class="hover:text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    Online Services
+                </a>
+            </div>
+
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="about.html" class="text-lime transition-colors">About</a>
+                <a href="services.html" class="hover:text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                    Online Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">About Hindsight Online</h1>
+                <p class="text-xl text-gray-600 mb-8 text-center">
+                    Your trusted partner in financial management and business administration
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company History -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Our History</h2>
+                <div class="prose lg:prose-lg">
+                    <p class="mb-6">
+                        Founded in 2020, Hindsight Online emerged from a vision to revolutionize how South African SMEs manage their financial and administrative operations. Our journey began when our founder, Sipho Mampe, identified a critical gap in the market for accessible, technology-driven accounting services that could adapt to the evolving needs of modern businesses.
+                    </p>
+                    <p class="mb-6">
+                        What started as a small consultancy has grown into a comprehensive business solutions provider, leveraging cloud technology and strategic partnerships to deliver exceptional value to our clients. Our commitment to innovation and excellence has positioned us as a leader in the digital transformation of accounting and business administration services.
+                    </p>
+                    <p class="mb-6">
+                        Today, we serve a diverse portfolio of clients across South Africa, from emerging startups to established SMEs, all while maintaining our core values of integrity, innovation, and client-centric service delivery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="text-lime mb-4">
+                        <i class="fas fa-lightbulb text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-600">Embracing technology to deliver modern solutions for modern businesses.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-lime mb-4">
+                        <i class="fas fa-handshake text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Integrity</h3>
+                    <p class="text-gray-600">Maintaining the highest standards of professional ethics and transparency.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-lime mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Client Focus</h3>
+                    <p class="text-gray-600">Putting our clients' success at the heart of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Sipho Mampe -->
+                <div class="team-card bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="mb-4">
+                        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full overflow-hidden">
+                            <img src="images/sipho-mampe.jpg" alt="Sipho Mampe" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sipho Mampe</h3>
+                    <p class="text-lime font-medium mb-3">Founder & Managing Director</p>
+                    <p class="text-gray-600 mb-4">
+                        A visionary leader with extensive experience in financial management and business strategy. Sipho's expertise in digital transformation has been instrumental in shaping our innovative approach to accounting services.
+                    </p>
+                </div>
+
+                <!-- Dineo Rametsi -->
+                <div class="team-card bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="mb-4">
+                        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full overflow-hidden">
+                            <img src="images/dineo-rametsi.jpg" alt="Dineo Rametsi" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dineo Rametsi</h3>
+                    <p class="text-lime font-medium mb-3">Head of Operations</p>
+                    <p class="text-gray-600 mb-4">
+                        With her strong background in business administration and client relations, Dineo ensures smooth operations and exceptional service delivery to all our clients.
+                    </p>
+                </div>
+
+                <!-- Ipeleng Mogapi -->
+                <div class="team-card bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="mb-4">
+                        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full overflow-hidden">
+                            <img src="images/ipeleng-mogapi.jpg" alt="Ipeleng Mogapi" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Ipeleng Mogapi</h3>
+                    <p class="text-lime font-medium mb-3">Technical Lead</p>
+                    <p class="text-gray-600 mb-4">
+                        Ipeleng's expertise in cloud technologies and accounting systems drives our technical capabilities, ensuring we deliver cutting-edge solutions to our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

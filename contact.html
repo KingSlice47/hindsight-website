@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hindsight Online (Pty) Ltd</title>
+    <meta name="description" content="Get in touch with Hindsight Online for professional accounting and business administration services. Located in Randburg, South Africa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime': '#32CD32',
+                        'primary': '#000000',
+                        'secondary': '#333333',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Sticky Header -->
+    <header class="site-header fixed w-full shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="logo-container">
+                    <img src="images/logo-placeholder.png" alt="Hindsight Online Logo" class="h-12">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-white">Hindsight Online</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
+                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="contact.html" class="text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    Online Services
+                </a>
+            </div>
+
+            <button class="md:hidden text-white" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="about.html" class="text-white hover:text-lime transition-colors">About</a>
+                <a href="services.html" class="text-white hover:text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="text-white hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="contact.html" class="text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                    Online Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="pt-24 pb-12">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Get in touch with our team for professional assistance
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Details Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="bg-card rounded-lg p-8 shadow-lg">
+                    <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="surname">Surname</label>
+                            <input type="text" id="surname" name="surname" required placeholder="Your surname">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="bookkeeping">Accounting & Bookkeeping</option>
+                                <option value="tax">Tax Services</option>
+                                <option value="financial-statements">Financial Statements</option>
+                                <option value="business-admin">Business Administration</option>
+                                <option value="tender-monitoring">Tender Monitoring</option>
+                                <option value="digital-services">Digital Services</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-lime text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="space-y-8">
+                    <div class="bg-card rounded-lg p-8 shadow-lg">
+                        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-lime mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Address</h3>
+                                    <p>364 Surrey Avenue<br>Ferndale<br>Randburg<br>2194</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-lime mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Phone</h3>
+                                    <p><a href="tel:+27110234567">+27 11 023 4567</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-lime mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Email</h3>
+                                    <p><a href="mailto:info@hindsightonline.co.za">info@hindsightonline.co.za</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-lime mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Business Hours</h3>
+                                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="bg-card rounded-lg p-8 shadow-lg">
+                        <h2 class="text-2xl font-bold mb-6">Connect With Us</h2>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                                <i class="fab fa-linkedin text-3xl"></i>
+                            </a>
+                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                                <i class="fab fa-facebook text-3xl"></i>
+                            </a>
+                            <a href="#" class="text-lime hover:text-opacity-80 transition-colors">
+                                <i class="fab fa-instagram text-3xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="bg-card rounded-lg shadow-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.0679067444!2d28.00351937620037!3d-26.098751176493387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957416b2bb5ae7%3A0x1c33d4b6a3099c6a!2s364%20Surrey%20Ave%2C%20Ferndale%2C%20Randburg%2C%202194!5e0!3m2!1sen!2sza!4v1710835000000"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

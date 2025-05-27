@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Hindsight Online (Pty) Ltd</title>
+    <meta name="description" content="Comprehensive accounting, tax, and business administration services for South African SMEs. Including bookkeeping, tax returns, financial statements, and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime': '#32CD32',
+                        'primary': '#000000',
+                        'secondary': '#333333',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Sticky Header (same as other pages) -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold">Hindsight Online</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="hover:text-lime transition-colors">About</a>
+                <a href="services.html" class="text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    Online Services
+                </a>
+            </div>
+
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="about.html" class="hover:text-lime transition-colors">About</a>
+                <a href="services.html" class="text-lime transition-colors">Services</a>
+                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
+                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
+                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                    Online Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Comprehensive financial and business solutions tailored for your success
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Accounting & Bookkeeping -->
+                <div class="service-card bg-gray-50 rounded-lg p-8">
+                    <div class="text-lime mb-6">
+                        <i class="fas fa-calculator text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Accounting & Bookkeeping</h2>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive bookkeeping services to keep your finances organized and compliant.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Monthly transaction processing and reconciliation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Financial record maintenance and organization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Cloud-based accounting software setup and management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Regular financial reporting and analysis</span>
+                        </li>
+                    </ul>
+                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Tax Services -->
+                <div class="service-card bg-gray-50 rounded-lg p-8">
+                    <div class="text-lime mb-6">
+                        <i class="fas fa-file-invoice-dollar text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Tax Services</h2>
+                    <p class="text-gray-600 mb-6">
+                        Professional tax planning and compliance services for businesses and individuals.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Personal and business tax returns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>VAT registration and returns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Tax planning and optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>SARS compliance and liaison</span>
+                        </li>
+                    </ul>
+                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Financial Statements -->
+                <div class="service-card bg-gray-50 rounded-lg p-8">
+                    <div class="text-lime mb-6">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Financial Statements</h2>
+                    <p class="text-gray-600 mb-6">
+                        Professional preparation and analysis of financial statements.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Annual financial statements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Management accounts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Cash flow projections</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Financial analysis and reporting</span>
+                        </li>
+                    </ul>
+                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Business Admin -->
+                <div class="service-card bg-gray-50 rounded-lg p-8">
+                    <div class="text-lime mb-6">
+                        <i class="fas fa-briefcase text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">Business Administration</h2>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive business administration support services.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Company secretarial services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Business registration and compliance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Document management and filing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span>Administrative process optimization</span>
+                        </li>
+                    </ul>
+                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Specialized Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Tender Monitoring -->
+                <div class="bg-white rounded-lg p-6">
+                    <div class="text-lime mb-4">
+                        <i class="fas fa-search-dollar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tender Monitoring</h3>
+                    <p class="text-gray-600">
+                        Stay informed about relevant tender opportunities with our comprehensive monitoring service. We track and alert you to potential business opportunities across various sectors.
+                    </p>
+                </div>
+
+                <!-- Digital Services (via Afrilink) -->
+                <div class="bg-white rounded-lg p-6">
+                    <div class="text-lime mb-4">
+                        <i class="fas fa-globe text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Digital Services (via Afrilink)</h3>
+                    <p class="text-gray-600">
+                        Access cutting-edge digital solutions through our partnership with Afrilink. From web development to digital marketing, we help you establish and grow your online presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Choose from our range of online services or contact us for a customized solution tailored to your business needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html#online-services" class="bg-lime text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all inline-block">
+                    View Online Services
+                </a>
+                <a href="index.html#contact" class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all inline-block">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
