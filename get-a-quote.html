@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Hindsight Online (Pty) Ltd</title>
+    <meta name="description" content="Request a personalized quote for our accounting, tax, and business administration services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime': 'var(--color-lime)',
+                        'primary': 'var(--color-primary)',
+                        'secondary': 'var(--color-secondary)',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Sticky Header -->
+    <header class="site-header fixed w-full shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="logo-container">
+                    <img src="images/logo-placeholder.png" alt="Hindsight Online Logo" class="h-12">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-white">Hindsight Online</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link text-lime">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button inline-block">
+                    Online Services
+                </a>
+            </div>
+
+            <button class="md:hidden text-white" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link text-lime">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button text-center">
+                    Online Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Get a Quote Hero Section -->
+    <section class="hero-section pt-24 pb-12">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Request a Quote</h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Tell us about your needs, and we'll provide a personalized quote.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-card rounded-lg p-8 shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-secondary">Your Details</h2>
+                <form class="quote-form" action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="text-secondary">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="text-secondary">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email address">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="text-secondary">Services Interested In</label>
+                        <div class="space-y-2 mt-2">
+                            <div>
+                                <input type="checkbox" id="service_bookkeeping" name="services_interested[]" value="bookkeeping" class="form-checkbox">
+                                <label for="service_bookkeeping" class="ml-2 text-secondary">Accounting & Bookkeeping</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="service_tax" name="services_interested[]" value="tax" class="form-checkbox">
+                                <label for="service_tax" class="ml-2 text-secondary">Tax Services</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="service_financial_statements" name="services_interested[]" value="financial_statements" class="form-checkbox">
+                                <label for="service_financial_statements" class="ml-2 text-secondary">Financial Statements</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="service_business_admin" name="services_interested[]" value="business_admin" class="form-checkbox">
+                                <label for="service_business_admin" class="ml-2 text-secondary">Business Administration</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="service_tender_monitoring" name="services_interested[]" value="tender_monitoring" class="form-checkbox">
+                                <label for="service_tender_monitoring" class="ml-2 text-secondary">Tender Monitoring</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="service_digital_services" name="services_interested[]" value="digital_services" class="form-checkbox">
+                                <label for="service_digital_services" class="ml-2 text-secondary">Digital Services (via Afrilink)</label>
+                            </div>
+                             <div>
+                                <input type="checkbox" id="service_other" name="services_interested[]" value="other" class="form-checkbox">
+                                <label for="service_other" class="ml-2 text-secondary">Other (Please specify in message)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="message" class="text-secondary">Additional Details / Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Provide any additional information that might help us prepare your quote..."></textarea>
+                    </div>
+                    <button type="submit" class="payfast-button w-full">
+                        Submit Quote Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.querySelector('.quote-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your quote request. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

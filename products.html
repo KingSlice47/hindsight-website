@@ -27,6 +27,24 @@
     </script>
 </head>
 <body class="font-inter">
+    <!-- Sticky Header -->
+    <header class="site-header fixed w-full shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="logo-container">
+                    <img src="images/logo-placeholder.png" alt="Hindsight Online Logo" class="h-12">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-white">Hindsight Online</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link text-lime">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button inline-block">
     <!-- Sticky Header (same as other pages) -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -44,12 +62,20 @@
                     Online Services
                 </a>
             </div>
-
+            <button class="md:hidden text-white" id="mobile-menu-button">
             <button class="md:hidden" id="mobile-menu-button">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
-
+        <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link text-lime">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button text-center">
         <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
                 <a href="about.html" class="hover:text-lime transition-colors">About</a>
@@ -65,6 +91,11 @@
     </header>
 
     <!-- Products Hero Section -->
+    <section class="hero-section pt-24 pb-12">
+        <div class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Our Products</h1>
+                <p class="text-xl text-gray-300 mb-8">
     <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
         <div class="container mx-auto px-4 py-16">
             <div class="max-w-4xl mx-auto text-center">
@@ -85,6 +116,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-box-open text-4xl"></i>
                     </div>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Product Alpha (Placeholder)</h2>
                     <h2 class="text-2xl font-bold mb-4">Product Alpha (Placeholder)</h2>
                     <p class="text-gray-600 mb-6">
                         This is a placeholder description for Product Alpha. More details coming soon!
@@ -92,6 +124,14 @@
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-start">
                             <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span class="text-gray-700">Feature 1 of Product Alpha</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span class="text-gray-700">Feature 2 of Product Alpha</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="payfast-button inline-block">
                             <span>Feature 1 of Product Alpha</span>
                         </li>
                         <li class="flex items-start">
@@ -109,6 +149,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-cogs text-4xl"></i>
                     </div>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Product Beta (Placeholder)</h2>
                     <h2 class="text-2xl font-bold mb-4">Product Beta (Placeholder)</h2>
                     <p class="text-gray-600 mb-6">
                         This is a placeholder description for Product Beta. Stay tuned for updates!
@@ -116,6 +157,14 @@
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-start">
                             <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span class="text-gray-700">Key aspect of Product Beta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-lime mt-1 mr-3"></i>
+                            <span class="text-gray-700">Another benefit of Product Beta</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="payfast-button inline-block">
                             <span>Key aspect of Product Beta</span>
                         </li>
                         <li class="flex items-start">
@@ -134,6 +183,11 @@
     <!-- Call to Action -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-secondary">Interested in Our Products?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Contact us today to learn more about how our products can help your business.
+            </p>
+            <a href="contact.html" class="payfast-button inline-block">
             <h2 class="text-3xl font-bold mb-6">Interested in Our Products?</h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 Contact us today to learn more about how our products can help your business.
