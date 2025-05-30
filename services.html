@@ -27,35 +27,42 @@
     </script>
 </head>
 <body class="font-inter">
-    <!-- Sticky Header (same as other pages) -->
-    <header class="fixed w-full bg-white shadow-md z-50">
+    <!-- Sticky Header -->
+    <header class="site-header fixed w-full shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <a href="index.html" class="text-2xl font-bold">Hindsight Online</a>
+                <div class="logo-container">
+                    <img src="images/logo-placeholder.png" alt="Hindsight Online Logo" class="h-12">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-white">Hindsight Online</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-6">
-                <a href="about.html" class="hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link text-lime">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button inline-block">
                     Online Services
                 </a>
             </div>
 
-            <button class="md:hidden" id="mobile-menu-button">
+            <button class="md:hidden text-white" id="mobile-menu-button">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
 
-        <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+        <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                <a href="about.html" class="hover:text-lime transition-colors">About</a>
-                <a href="services.html" class="text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link text-lime">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button text-center">
                     Online Services
                 </a>
             </div>
@@ -63,11 +70,11 @@
     </header>
 
     <!-- Services Hero Section -->
-    <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
+    <section class="hero-section pt-24 pb-12">
         <div class="container mx-auto px-4 py-16">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-                <p class="text-xl text-gray-600 mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Our Services</h1>
+                <p class="text-xl text-gray-300 mb-8">
                     Comprehensive financial and business solutions tailored for your success
                 </p>
             </div>
@@ -83,7 +90,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-calculator text-4xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Accounting & Bookkeeping</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Accounting & Bookkeeping</h2>
                     <p class="text-gray-600 mb-6">
                         Comprehensive bookkeeping services to keep your finances organized and compliant.
                     </p>
@@ -105,7 +112,7 @@
                             <span>Regular financial reporting and analysis</span>
                         </li>
                     </ul>
-                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    <a href="index.html#online-services" class="payfast-button inline-block">
                         Get Started
                     </a>
                 </div>
@@ -115,7 +122,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-file-invoice-dollar text-4xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Tax Services</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Tax Services</h2>
                     <p class="text-gray-600 mb-6">
                         Professional tax planning and compliance services for businesses and individuals.
                     </p>
@@ -137,7 +144,7 @@
                             <span>SARS compliance and liaison</span>
                         </li>
                     </ul>
-                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    <a href="index.html#online-services" class="payfast-button inline-block">
                         Get Started
                     </a>
                 </div>
@@ -147,7 +154,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-chart-line text-4xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Financial Statements</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Financial Statements</h2>
                     <p class="text-gray-600 mb-6">
                         Professional preparation and analysis of financial statements.
                     </p>
@@ -169,7 +176,7 @@
                             <span>Financial analysis and reporting</span>
                         </li>
                     </ul>
-                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    <a href="index.html#online-services" class="payfast-button inline-block">
                         Get Started
                     </a>
                 </div>
@@ -179,7 +186,7 @@
                     <div class="text-lime mb-6">
                         <i class="fas fa-briefcase text-4xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Business Administration</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-secondary">Business Administration</h2>
                     <p class="text-gray-600 mb-6">
                         Comprehensive business administration support services.
                     </p>
@@ -201,7 +208,7 @@
                             <span>Administrative process optimization</span>
                         </li>
                     </ul>
-                    <a href="index.html#online-services" class="inline-block bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                    <a href="index.html#online-services" class="payfast-button inline-block">
                         Get Started
                     </a>
                 </div>
@@ -212,14 +219,14 @@
     <!-- Additional Services -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Specialized Services</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-secondary">Specialized Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Tender Monitoring -->
                 <div class="bg-white rounded-lg p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-search-dollar text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Tender Monitoring</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-secondary">Tender Monitoring</h3>
                     <p class="text-gray-600">
                         Stay informed about relevant tender opportunities with our comprehensive monitoring service. We track and alert you to potential business opportunities across various sectors.
                     </p>
@@ -230,7 +237,7 @@
                     <div class="text-lime mb-4">
                         <i class="fas fa-globe text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Digital Services (via Afrilink)</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-secondary">Digital Services (via Afrilink)</h3>
                     <p class="text-gray-600">
                         Access cutting-edge digital solutions through our partnership with Afrilink. From web development to digital marketing, we help you establish and grow your online presence.
                     </p>
@@ -242,15 +249,15 @@
     <!-- Call to Action -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+            <h2 class="text-3xl font-bold mb-6 text-secondary">Ready to Get Started?</h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 Choose from our range of online services or contact us for a customized solution tailored to your business needs.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="index.html#online-services" class="bg-lime text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all inline-block">
+                <a href="index.html#online-services" class="payfast-button inline-block">
                     View Online Services
                 </a>
-                <a href="index.html#contact" class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all inline-block">
+                <a href="contact.html" class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all inline-block">
                     Contact Us
                 </a>
             </div>

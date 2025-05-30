@@ -27,35 +27,42 @@
     </script>
 </head>
 <body class="font-inter">
-    <!-- Sticky Header (same as index.html) -->
-    <header class="fixed w-full bg-white shadow-md z-50">
+    <!-- Sticky Header -->
+    <header class="site-header fixed w-full shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <a href="index.html" class="text-2xl font-bold">Hindsight Online</a>
+                <div class="logo-container">
+                    <img src="images/logo-placeholder.png" alt="Hindsight Online Logo" class="h-12">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-white">Hindsight Online</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-6">
-                <a href="about.html" class="text-lime transition-colors">About</a>
-                <a href="services.html" class="hover:text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+                <a href="about.html" class="nav-link text-lime">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button inline-block">
                     Online Services
                 </a>
             </div>
 
-            <button class="md:hidden" id="mobile-menu-button">
+            <button class="md:hidden text-white" id="mobile-menu-button">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
 
-        <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+        <div class="hidden md:hidden bg-black w-full" id="mobile-menu">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                <a href="about.html" class="text-lime transition-colors">About</a>
-                <a href="services.html" class="hover:text-lime transition-colors">Services</a>
-                <a href="index.html#why-choose-us" class="hover:text-lime transition-colors">Why Choose Us</a>
-                <a href="index.html#contact" class="hover:text-lime transition-colors">Contact</a>
-                <a href="index.html#online-services" class="bg-lime text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-center">
+                <a href="about.html" class="nav-link text-lime">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="get-a-quote.html" class="nav-link">Get a Quote</a>
+                <a href="index.html#online-services" class="payfast-button text-center">
                     Online Services
                 </a>
             </div>
@@ -63,11 +70,11 @@
     </header>
 
     <!-- About Us Hero Section -->
-    <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-white">
+    <section class="hero-section pt-24 pb-12">
         <div class="container mx-auto px-4 py-16">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">About Hindsight Online</h1>
-                <p class="text-xl text-gray-600 mb-8 text-center">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">About Hindsight Online</h1>
+                <p class="text-xl text-gray-300 mb-8">
                     Your trusted partner in financial management and business administration
                 </p>
             </div>
@@ -78,8 +85,8 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Our History</h2>
-                <div class="prose lg:prose-lg">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Our History</h2>
+                <div class="prose lg:prose-lg text-secondary">
                     <p class="mb-6">
                         Founded in 2020, Hindsight Online emerged from a vision to revolutionize how South African SMEs manage their financial and administrative operations. Our journey began when our founder, Sipho Mampe, identified a critical gap in the market for accessible, technology-driven accounting services that could adapt to the evolving needs of modern businesses.
                     </p>
@@ -97,27 +104,27 @@
     <!-- Core Values -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-secondary">Our Core Values</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="text-center p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-lightbulb text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-secondary">Innovation</h3>
                     <p class="text-gray-600">Embracing technology to deliver modern solutions for modern businesses.</p>
                 </div>
                 <div class="text-center p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-handshake text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Integrity</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-secondary">Integrity</h3>
                     <p class="text-gray-600">Maintaining the highest standards of professional ethics and transparency.</p>
                 </div>
                 <div class="text-center p-6">
                     <div class="text-lime mb-4">
                         <i class="fas fa-users text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Client Focus</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-secondary">Client Focus</h3>
                     <p class="text-gray-600">Putting our clients' success at the heart of everything we do.</p>
                 </div>
             </div>
@@ -127,7 +134,7 @@
     <!-- Meet the Team -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-secondary">Meet Our Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Sipho Mampe -->
                 <div class="team-card bg-gray-50 rounded-lg p-6 text-center">
@@ -136,7 +143,7 @@
                             <img src="images/sipho-mampe.jpg" alt="Sipho Mampe" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Sipho Mampe</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Sipho Mampe</h3>
                     <p class="text-lime font-medium mb-3">Founder & Managing Director</p>
                     <p class="text-gray-600 mb-4">
                         A visionary leader with extensive experience in financial management and business strategy. Sipho's expertise in digital transformation has been instrumental in shaping our innovative approach to accounting services.
@@ -150,7 +157,7 @@
                             <img src="images/dineo-rametsi.jpg" alt="Dineo Rametsi" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Dineo Rametsi</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Dineo Rametsi</h3>
                     <p class="text-lime font-medium mb-3">Head of Operations</p>
                     <p class="text-gray-600 mb-4">
                         With her strong background in business administration and client relations, Dineo ensures smooth operations and exceptional service delivery to all our clients.
@@ -164,7 +171,7 @@
                             <img src="images/ipeleng-mogapi.jpg" alt="Ipeleng Mogapi" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Ipeleng Mogapi</h3>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary">Ipeleng Mogapi</h3>
                     <p class="text-lime font-medium mb-3">Technical Lead</p>
                     <p class="text-gray-600 mb-4">
                         Ipeleng's expertise in cloud technologies and accounting systems drives our technical capabilities, ensuring we deliver cutting-edge solutions to our clients.
